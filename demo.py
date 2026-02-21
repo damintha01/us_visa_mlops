@@ -1,3 +1,4 @@
-import us_visa.logger as logging
+from us_visa.pipline.training_pipeline import TrainPipeline
 
-logging.info("This is a info message")
+obj=TrainPipeline()
+obj.run_pipeline()
