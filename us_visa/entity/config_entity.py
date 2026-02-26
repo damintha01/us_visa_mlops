@@ -9,8 +9,9 @@ TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
 @dataclass
 class TrainingPipelineConfig:
     pipeline_name: str = PIPELINE_NAME
-    artifact_dir: str = os.path.join(ARTIFACTS_DIR, TIMESTAMP)
     timestamp: str = TIMESTAMP
+    artifact_dir: str = os.path.join(ARTIFACTS_DIR, TIMESTAMP)
+    
 
 
 training_pipeline_config: TrainingPipelineConfig = TrainingPipelineConfig()
